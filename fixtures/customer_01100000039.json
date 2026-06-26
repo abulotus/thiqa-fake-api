@@ -1,0 +1,69 @@
+{
+  "national_id": "01100000039",
+  "provider": "MTN Syria",
+  "request_id": "TEL-2026-000039",
+  "generated_at": "2026-06-26T08:00:00Z",
+  "customer": {
+    "national_id": "01100000039",
+    "full_name_ar": "خلود منير العبودي",
+    "full_name_en": "Kholoud Munir Al-Aboudi",
+    "date_of_birth": "1995-03-18",
+    "gender": "F",
+    "mobile_number": "0955000039"
+  },
+  "sim_cards": [
+    {
+      "phone_number": "0955000039",
+      "sim_type": "prepaid",
+      "status": "active",
+      "activation_date": "2025-02-01",
+      "months_active": 16,
+      "last_topup_date": "2026-05-17",
+      "last_network_activity": "2026-05-16",
+      "six_month_summary": {
+        "total_topups": 10,
+        "total_topup_value_syp": 53000,
+        "average_monthly_topup_syp": 8833
+      },
+      "monthly_activity": [
+        {
+          "month": "2026-01",
+          "monthly_total_syp": 20000
+        },
+        {
+          "month": "2026-02",
+          "monthly_total_syp": 15000
+        },
+        {
+          "month": "2026-03",
+          "monthly_total_syp": 10000
+        },
+        {
+          "month": "2026-04",
+          "monthly_total_syp": 5000
+        },
+        {
+          "month": "2026-05",
+          "monthly_total_syp": 3000
+        }
+      ]
+    }
+  ],
+  "features": {
+    "total_sims": 1,
+    "has_contract_sim": false,
+    "prepaid_sim_count": 1,
+    "contract_sim_count": 0,
+    "max_tenure_months": 16,
+    "days_since_last_activity": 40,
+    "contract_ontime_rate": null,
+    "contract_total_months": null,
+    "prepaid_total_spend_6m": 53000.0,
+    "prepaid_avg_monthly_spend": 10600,
+    "prepaid_spend_stddev": 7021,
+    "prepaid_spend_trend": -4400.0,
+    "prepaid_topup_frequency_6m": 10,
+    "computed_at": "2026-06-26T00:00:00Z",
+    "feature_version": "v1"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "national_id": "01100000009",
+  "provider": "Syriatel",
+  "request_id": "TEL-2026-000009",
+  "generated_at": "2026-06-26T08:00:00Z",
+  "customer": {
+    "national_id": "01100000009",
+    "full_name_ar": "عمر باسل الريحاوي",
+    "full_name_en": "Omar Basel Al-Rihawi",
+    "date_of_birth": "1983-08-18",
+    "gender": "M",
+    "mobile_number": "0931000009"
+  },
+  "sim_cards": [
+    {
+      "phone_number": "0931000009",
+      "sim_type": "prepaid",
+      "status": "active",
+      "activation_date": "2018-02-01",
+      "months_active": 100,
+      "last_topup_date": "2026-06-24",
+      "last_network_activity": "2026-06-23",
+      "six_month_summary": {
+        "total_topups": 12,
+        "total_topup_value_syp": 1231000,
+        "average_monthly_topup_syp": 205167
+      },
+      "monthly_activity": [
+        {
+          "month": "2026-01",
+          "monthly_total_syp": 200000
+        },
+        {
+          "month": "2026-02",
+          "monthly_total_syp": 205000
+        },
+        {
+          "month": "2026-03",
+          "monthly_total_syp": 202000
+        },
+        {
+          "month": "2026-04",
+          "monthly_total_syp": 208000
+        },
+        {
+          "month": "2026-05",
+          "monthly_total_syp": 206000
+        },
+        {
+          "month": "2026-06",
+          "monthly_total_syp": 210000
+        }
+      ]
+    },
+    {
+      "phone_number": "0932000009",
+      "sim_type": "prepaid",
+      "status": "active",
+      "activation_date": "2019-10-01",
+      "months_active": 80,
+      "last_topup_date": "2026-06-22",
+      "last_network_activity": "2026-06-21",
+      "six_month_summary": {
+        "total_topups": 12,
+        "total_topup_value_syp": 619000,
+        "average_monthly_topup_syp": 103167
+      },
+      "monthly_activity": [
+        {
+          "month": "2026-01",
+          "monthly_total_syp": 100000
+        },
+        {
+          "month": "2026-02",
+          "monthly_total_syp": 103000
+        },
+        {
+          "month": "2026-03",
+          "monthly_total_syp": 101000
+        },
+        {
+          "month": "2026-04",
+          "monthly_total_syp": 105000
+        },
+        {
+          "month": "2026-05",
+          "monthly_total_syp": 103000
+        },
+        {
+          "month": "2026-06",
+          "monthly_total_syp": 107000
+        }
+      ]
+    },
+    {
+      "phone_number": "0933000009",
+      "sim_type": "prepaid",
+      "status": "active",
+      "activation_date": "2021-11-01",
+      "months_active": 55,
+      "last_topup_date": "2026-06-20",
+      "last_network_activity": "2026-06-19",
+      "six_month_summary": {
+        "total_topups": 12,
+        "total_topup_value_syp": 372000,
+        "average_monthly_topup_syp": 62000
+      },
+      "monthly_activity": [
+        {
+          "month": "2026-01",
+          "monthly_total_syp": 60000
+        },
+        {
+          "month": "2026-02",
+          "monthly_total_syp": 62000
+        },
+        {
+          "month": "2026-03",
+          "monthly_total_syp": 61000
+        },
+        {
+          "month": "2026-04",
+          "monthly_total_syp": 63000
+        },
+        {
+          "month": "2026-05",
+          "monthly_total_syp": 62000
+        },
+        {
+          "month": "2026-06",
+          "monthly_total_syp": 64000
+        }
+      ]
+    }
+  ],
+  "features": {
+    "total_sims": 3,
+    "has_contract_sim": false,
+    "prepaid_sim_count": 3,
+    "contract_sim_count": 0,
+    "max_tenure_months": 100,
+    "days_since_last_activity": 2,
+    "contract_ontime_rate": null,
+    "contract_total_months": null,
+    "prepaid_total_spend_6m": 2222000.0,
+    "prepaid_avg_monthly_spend": 370333,
+    "prepaid_spend_stddev": 7659,
+    "prepaid_spend_trend": 3428.6,
+    "prepaid_topup_frequency_6m": 36,
+    "computed_at": "2026-06-26T00:00:00Z",
+    "feature_version": "v1"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "national_id": "01100000050",
+  "provider": "MTN Syria",
+  "request_id": "TEL-2026-000050",
+  "generated_at": "2026-06-26T08:00:00Z",
+  "customer": {
+    "national_id": "01100000050",
+    "full_name_ar": "منذر حسن الخضر",
+    "full_name_en": "Munther Hassan Al-Khadr",
+    "date_of_birth": "1986-08-09",
+    "gender": "M",
+    "mobile_number": "0944000050"
+  },
+  "sim_cards": [
+    {
+      "phone_number": "0944000050",
+      "sim_type": "contract",
+      "status": "active",
+      "activation_date": "2025-12-01",
+      "months_active": 6,
+      "monthly_fee_syp": 10000,
+      "last_payment_date": "2026-02-26",
+      "payment_status": "missed",
+      "payments_last_6_months": [
+        {
+          "month": "2026-01",
+          "status": "missed"
+        },
+        {
+          "month": "2026-02",
+          "status": "missed"
+        },
+        {
+          "month": "2026-03",
+          "status": "missed"
+        },
+        {
+          "month": "2026-04",
+          "status": "missed"
+        },
+        {
+          "month": "2026-05",
+          "status": "missed"
+        },
+        {
+          "month": "2026-06",
+          "status": "missed"
+        }
+      ]
+    },
+    {
+      "phone_number": "0944000051",
+      "sim_type": "prepaid",
+      "status": "inactive",
+      "activation_date": "2026-01-01",
+      "months_active": 5,
+      "last_topup_date": null,
+      "last_network_activity": "2026-02-25",
+      "six_month_summary": {
+        "total_topups": 0,
+        "total_topup_value_syp": 0,
+        "average_monthly_topup_syp": 0
+      },
+      "monthly_activity": []
+    }
+  ],
+  "features": {
+    "total_sims": 2,
+    "has_contract_sim": true,
+    "prepaid_sim_count": 1,
+    "contract_sim_count": 1,
+    "max_tenure_months": 6,
+    "days_since_last_activity": 120,
+    "contract_ontime_rate": 0.0,
+    "contract_total_months": 6,
+    "prepaid_total_spend_6m": 0.0,
+    "prepaid_avg_monthly_spend": null,
+    "prepaid_spend_stddev": 0,
+    "prepaid_spend_trend": null,
+    "prepaid_topup_frequency_6m": 0,
+    "computed_at": "2026-06-26T00:00:00Z",
+    "feature_version": "v1"
+  }
+}

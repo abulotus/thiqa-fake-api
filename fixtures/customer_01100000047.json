@@ -1,0 +1,69 @@
+{
+  "national_id": "01100000047",
+  "provider": "MTN Syria",
+  "request_id": "TEL-2026-000047",
+  "generated_at": "2026-06-26T08:00:00Z",
+  "customer": {
+    "national_id": "01100000047",
+    "full_name_ar": "لارا أنطوان سلامة",
+    "full_name_en": "Lara Antoine Salameh",
+    "date_of_birth": "1989-04-17",
+    "gender": "F",
+    "mobile_number": "0955000047"
+  },
+  "sim_cards": [
+    {
+      "phone_number": "0955000047",
+      "sim_type": "contract",
+      "status": "active",
+      "activation_date": "2025-11-01",
+      "months_active": 7,
+      "monthly_fee_syp": 12000,
+      "last_payment_date": "2026-03-28",
+      "payment_status": "missed",
+      "payments_last_6_months": [
+        {
+          "month": "2026-01",
+          "status": "missed"
+        },
+        {
+          "month": "2026-02",
+          "status": "missed"
+        },
+        {
+          "month": "2026-03",
+          "status": "missed"
+        },
+        {
+          "month": "2026-04",
+          "status": "missed"
+        },
+        {
+          "month": "2026-05",
+          "status": "missed"
+        },
+        {
+          "month": "2026-06",
+          "status": "missed"
+        }
+      ]
+    }
+  ],
+  "features": {
+    "total_sims": 1,
+    "has_contract_sim": true,
+    "prepaid_sim_count": 0,
+    "contract_sim_count": 1,
+    "max_tenure_months": 7,
+    "days_since_last_activity": 90,
+    "contract_ontime_rate": 0.0,
+    "contract_total_months": 6,
+    "prepaid_total_spend_6m": null,
+    "prepaid_avg_monthly_spend": null,
+    "prepaid_spend_stddev": 0,
+    "prepaid_spend_trend": null,
+    "prepaid_topup_frequency_6m": null,
+    "computed_at": "2026-06-26T00:00:00Z",
+    "feature_version": "v1"
+  }
+}

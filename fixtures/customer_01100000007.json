@@ -1,0 +1,73 @@
+{
+  "national_id": "01100000007",
+  "provider": "MTN Syria",
+  "request_id": "TEL-2026-000007",
+  "generated_at": "2026-06-26T08:00:00Z",
+  "customer": {
+    "national_id": "01100000007",
+    "full_name_ar": "طارق محمود السلوم",
+    "full_name_en": "Tarek Mahmoud Al-Saloum",
+    "date_of_birth": "1977-06-20",
+    "gender": "M",
+    "mobile_number": "0955000007"
+  },
+  "sim_cards": [
+    {
+      "phone_number": "0955000007",
+      "sim_type": "prepaid",
+      "status": "active",
+      "activation_date": "2015-08-01",
+      "months_active": 130,
+      "last_topup_date": "2026-06-23",
+      "last_network_activity": "2026-06-22",
+      "six_month_summary": {
+        "total_topups": 12,
+        "total_topup_value_syp": 1531000,
+        "average_monthly_topup_syp": 255167
+      },
+      "monthly_activity": [
+        {
+          "month": "2026-01",
+          "monthly_total_syp": 250000
+        },
+        {
+          "month": "2026-02",
+          "monthly_total_syp": 255000
+        },
+        {
+          "month": "2026-03",
+          "monthly_total_syp": 252000
+        },
+        {
+          "month": "2026-04",
+          "monthly_total_syp": 258000
+        },
+        {
+          "month": "2026-05",
+          "monthly_total_syp": 256000
+        },
+        {
+          "month": "2026-06",
+          "monthly_total_syp": 260000
+        }
+      ]
+    }
+  ],
+  "features": {
+    "total_sims": 1,
+    "has_contract_sim": false,
+    "prepaid_sim_count": 1,
+    "contract_sim_count": 0,
+    "max_tenure_months": 130,
+    "days_since_last_activity": 3,
+    "contract_ontime_rate": null,
+    "contract_total_months": null,
+    "prepaid_total_spend_6m": 1531000.0,
+    "prepaid_avg_monthly_spend": 255167,
+    "prepaid_spend_stddev": 3710,
+    "prepaid_spend_trend": 1685.7,
+    "prepaid_topup_frequency_6m": 12,
+    "computed_at": "2026-06-26T00:00:00Z",
+    "feature_version": "v1"
+  }
+}

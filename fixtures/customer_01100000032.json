@@ -1,0 +1,61 @@
+{
+  "national_id": "01100000032",
+  "provider": "MTN Syria",
+  "request_id": "TEL-2026-000032",
+  "generated_at": "2026-06-26T08:00:00Z",
+  "customer": {
+    "national_id": "01100000032",
+    "full_name_ar": "هبة جورج الزيات",
+    "full_name_en": "Heba George Al-Zayat",
+    "date_of_birth": "1991-09-02",
+    "gender": "F",
+    "mobile_number": "0955000032"
+  },
+  "sim_cards": [
+    {
+      "phone_number": "0955000032",
+      "sim_type": "prepaid",
+      "status": "active",
+      "activation_date": "2024-02-01",
+      "months_active": 28,
+      "last_topup_date": "2026-06-18",
+      "last_network_activity": "2026-06-17",
+      "six_month_summary": {
+        "total_topups": 6,
+        "total_topup_value_syp": 103000,
+        "average_monthly_topup_syp": 17167
+      },
+      "monthly_activity": [
+        {
+          "month": "2026-04",
+          "monthly_total_syp": 30000
+        },
+        {
+          "month": "2026-05",
+          "monthly_total_syp": 35000
+        },
+        {
+          "month": "2026-06",
+          "monthly_total_syp": 38000
+        }
+      ]
+    }
+  ],
+  "features": {
+    "total_sims": 1,
+    "has_contract_sim": false,
+    "prepaid_sim_count": 1,
+    "contract_sim_count": 0,
+    "max_tenure_months": 28,
+    "days_since_last_activity": 8,
+    "contract_ontime_rate": null,
+    "contract_total_months": null,
+    "prepaid_total_spend_6m": 103000.0,
+    "prepaid_avg_monthly_spend": 34333,
+    "prepaid_spend_stddev": 4041,
+    "prepaid_spend_trend": 4000.0,
+    "prepaid_topup_frequency_6m": 6,
+    "computed_at": "2026-06-26T00:00:00Z",
+    "feature_version": "v1"
+  }
+}

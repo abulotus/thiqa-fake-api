@@ -1,0 +1,97 @@
+{
+  "national_id": "01100000036",
+  "provider": "Syriatel",
+  "request_id": "TEL-2026-000036",
+  "generated_at": "2026-06-26T08:00:00Z",
+  "customer": {
+    "national_id": "01100000036",
+    "full_name_ar": "نادر يحيى الغوطي",
+    "full_name_en": "Nader Yahya Al-Ghouti",
+    "date_of_birth": "1987-04-12",
+    "gender": "M",
+    "mobile_number": "0931000036"
+  },
+  "sim_cards": [
+    {
+      "phone_number": "0931000036",
+      "sim_type": "contract",
+      "status": "active",
+      "activation_date": "2024-10-01",
+      "months_active": 20,
+      "monthly_fee_syp": 22000,
+      "last_payment_date": "2026-05-12",
+      "payment_status": "late",
+      "payments_last_6_months": [
+        {
+          "month": "2026-01",
+          "status": "paid"
+        },
+        {
+          "month": "2026-02",
+          "status": "missed"
+        },
+        {
+          "month": "2026-03",
+          "status": "missed"
+        },
+        {
+          "month": "2026-04",
+          "status": "paid"
+        },
+        {
+          "month": "2026-05",
+          "status": "missed"
+        },
+        {
+          "month": "2026-06",
+          "status": "late"
+        }
+      ]
+    },
+    {
+      "phone_number": "0932000036",
+      "sim_type": "prepaid",
+      "status": "active",
+      "activation_date": "2025-03-01",
+      "months_active": 15,
+      "last_topup_date": "2026-05-22",
+      "last_network_activity": "2026-05-21",
+      "six_month_summary": {
+        "total_topups": 6,
+        "total_topup_value_syp": 33000,
+        "average_monthly_topup_syp": 5500
+      },
+      "monthly_activity": [
+        {
+          "month": "2026-01",
+          "monthly_total_syp": 15000
+        },
+        {
+          "month": "2026-03",
+          "monthly_total_syp": 10000
+        },
+        {
+          "month": "2026-05",
+          "monthly_total_syp": 8000
+        }
+      ]
+    }
+  ],
+  "features": {
+    "total_sims": 2,
+    "has_contract_sim": true,
+    "prepaid_sim_count": 1,
+    "contract_sim_count": 1,
+    "max_tenure_months": 20,
+    "days_since_last_activity": 35,
+    "contract_ontime_rate": 0.33,
+    "contract_total_months": 6,
+    "prepaid_total_spend_6m": 33000.0,
+    "prepaid_avg_monthly_spend": 11000,
+    "prepaid_spend_stddev": 3606,
+    "prepaid_spend_trend": -3500.0,
+    "prepaid_topup_frequency_6m": 6,
+    "computed_at": "2026-06-26T00:00:00Z",
+    "feature_version": "v1"
+  }
+}

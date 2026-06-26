@@ -1,0 +1,105 @@
+{
+  "national_id": "01100000038",
+  "provider": "Syriatel",
+  "request_id": "TEL-2026-000038",
+  "generated_at": "2026-06-26T08:00:00Z",
+  "customer": {
+    "national_id": "01100000038",
+    "full_name_ar": "كمال فؤاد المزيب",
+    "full_name_en": "Kamal Fouad Al-Muzayib",
+    "date_of_birth": "1990-11-03",
+    "gender": "M",
+    "mobile_number": "0931000038"
+  },
+  "sim_cards": [
+    {
+      "phone_number": "0931000038",
+      "sim_type": "contract",
+      "status": "active",
+      "activation_date": "2025-06-01",
+      "months_active": 12,
+      "monthly_fee_syp": 20000,
+      "last_payment_date": "2026-05-07",
+      "payment_status": "late",
+      "payments_last_6_months": [
+        {
+          "month": "2026-01",
+          "status": "paid"
+        },
+        {
+          "month": "2026-02",
+          "status": "paid"
+        },
+        {
+          "month": "2026-03",
+          "status": "missed"
+        },
+        {
+          "month": "2026-04",
+          "status": "missed"
+        },
+        {
+          "month": "2026-05",
+          "status": "missed"
+        },
+        {
+          "month": "2026-06",
+          "status": "late"
+        }
+      ]
+    },
+    {
+      "phone_number": "0932000038",
+      "sim_type": "prepaid",
+      "status": "active",
+      "activation_date": "2025-08-01",
+      "months_active": 10,
+      "last_topup_date": "2026-05-17",
+      "last_network_activity": "2026-05-16",
+      "six_month_summary": {
+        "total_topups": 10,
+        "total_topup_value_syp": 85000,
+        "average_monthly_topup_syp": 14167
+      },
+      "monthly_activity": [
+        {
+          "month": "2026-01",
+          "monthly_total_syp": 30000
+        },
+        {
+          "month": "2026-02",
+          "monthly_total_syp": 25000
+        },
+        {
+          "month": "2026-03",
+          "monthly_total_syp": 15000
+        },
+        {
+          "month": "2026-04",
+          "monthly_total_syp": 10000
+        },
+        {
+          "month": "2026-05",
+          "monthly_total_syp": 5000
+        }
+      ]
+    }
+  ],
+  "features": {
+    "total_sims": 2,
+    "has_contract_sim": true,
+    "prepaid_sim_count": 1,
+    "contract_sim_count": 1,
+    "max_tenure_months": 12,
+    "days_since_last_activity": 40,
+    "contract_ontime_rate": 0.33,
+    "contract_total_months": 6,
+    "prepaid_total_spend_6m": 85000.0,
+    "prepaid_avg_monthly_spend": 17000,
+    "prepaid_spend_stddev": 10368,
+    "prepaid_spend_trend": -6500.0,
+    "prepaid_topup_frequency_6m": 10,
+    "computed_at": "2026-06-26T00:00:00Z",
+    "feature_version": "v1"
+  }
+}

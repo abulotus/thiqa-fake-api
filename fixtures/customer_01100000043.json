@@ -1,0 +1,57 @@
+{
+  "national_id": "01100000043",
+  "provider": "MTN Syria",
+  "request_id": "TEL-2026-000043",
+  "generated_at": "2026-06-26T08:00:00Z",
+  "customer": {
+    "national_id": "01100000043",
+    "full_name_ar": "حنان سعد الحموي",
+    "full_name_en": "Hanan Saad Al-Hamawi",
+    "date_of_birth": "1993-05-29",
+    "gender": "F",
+    "mobile_number": "0955000043"
+  },
+  "sim_cards": [
+    {
+      "phone_number": "0955000043",
+      "sim_type": "prepaid",
+      "status": "active",
+      "activation_date": "2023-12-01",
+      "months_active": 30,
+      "last_topup_date": "2026-06-01",
+      "last_network_activity": "2026-05-31",
+      "six_month_summary": {
+        "total_topups": 4,
+        "total_topup_value_syp": 28000,
+        "average_monthly_topup_syp": 4667
+      },
+      "monthly_activity": [
+        {
+          "month": "2026-01",
+          "monthly_total_syp": 20000
+        },
+        {
+          "month": "2026-06",
+          "monthly_total_syp": 8000
+        }
+      ]
+    }
+  ],
+  "features": {
+    "total_sims": 1,
+    "has_contract_sim": false,
+    "prepaid_sim_count": 1,
+    "contract_sim_count": 0,
+    "max_tenure_months": 30,
+    "days_since_last_activity": 25,
+    "contract_ontime_rate": null,
+    "contract_total_months": null,
+    "prepaid_total_spend_6m": 28000.0,
+    "prepaid_avg_monthly_spend": 14000,
+    "prepaid_spend_stddev": 8485,
+    "prepaid_spend_trend": -12000.0,
+    "prepaid_topup_frequency_6m": 4,
+    "computed_at": "2026-06-26T00:00:00Z",
+    "feature_version": "v1"
+  }
+}

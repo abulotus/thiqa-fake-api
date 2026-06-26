@@ -1,0 +1,83 @@
+{
+  "national_id": "01100000048",
+  "provider": "Syriatel",
+  "request_id": "TEL-2026-000048",
+  "generated_at": "2026-06-26T08:00:00Z",
+  "customer": {
+    "national_id": "01100000048",
+    "full_name_ar": "إياد جابر الفقيه",
+    "full_name_en": "Iyad Jaber Al-Faqih",
+    "date_of_birth": "1983-10-24",
+    "gender": "M",
+    "mobile_number": "0931000048"
+  },
+  "sim_cards": [
+    {
+      "phone_number": "0931000048",
+      "sim_type": "prepaid",
+      "status": "inactive",
+      "activation_date": "2023-06-01",
+      "months_active": 36,
+      "last_topup_date": null,
+      "last_network_activity": "2026-03-22",
+      "six_month_summary": {
+        "total_topups": 0,
+        "total_topup_value_syp": 0,
+        "average_monthly_topup_syp": 0
+      },
+      "monthly_activity": []
+    },
+    {
+      "phone_number": "0932000048",
+      "sim_type": "prepaid",
+      "status": "inactive",
+      "activation_date": "2024-08-01",
+      "months_active": 22,
+      "last_topup_date": null,
+      "last_network_activity": "2026-03-07",
+      "six_month_summary": {
+        "total_topups": 0,
+        "total_topup_value_syp": 0,
+        "average_monthly_topup_syp": 0
+      },
+      "monthly_activity": []
+    },
+    {
+      "phone_number": "0933000048",
+      "sim_type": "prepaid",
+      "status": "inactive",
+      "activation_date": "2025-10-01",
+      "months_active": 8,
+      "last_topup_date": null,
+      "last_network_activity": "2026-05-11",
+      "six_month_summary": {
+        "total_topups": 2,
+        "total_topup_value_syp": 3000,
+        "average_monthly_topup_syp": 500
+      },
+      "monthly_activity": [
+        {
+          "month": "2026-05",
+          "monthly_total_syp": 3000
+        }
+      ]
+    }
+  ],
+  "features": {
+    "total_sims": 3,
+    "has_contract_sim": false,
+    "prepaid_sim_count": 3,
+    "contract_sim_count": 0,
+    "max_tenure_months": 36,
+    "days_since_last_activity": 46,
+    "contract_ontime_rate": null,
+    "contract_total_months": null,
+    "prepaid_total_spend_6m": 3000.0,
+    "prepaid_avg_monthly_spend": 3000,
+    "prepaid_spend_stddev": 0,
+    "prepaid_spend_trend": null,
+    "prepaid_topup_frequency_6m": 2,
+    "computed_at": "2026-06-26T00:00:00Z",
+    "feature_version": "v1"
+  }
+}

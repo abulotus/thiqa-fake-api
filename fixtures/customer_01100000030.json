@@ -1,0 +1,113 @@
+{
+  "national_id": "01100000030",
+  "provider": "MTN Syria",
+  "request_id": "TEL-2026-000030",
+  "generated_at": "2026-06-26T08:00:00Z",
+  "customer": {
+    "national_id": "01100000030",
+    "full_name_ar": "منى كريم البيطار",
+    "full_name_en": "Mona Karim Al-Baytar",
+    "date_of_birth": "1993-07-19",
+    "gender": "F",
+    "mobile_number": "0955000030"
+  },
+  "sim_cards": [
+    {
+      "phone_number": "0955000030",
+      "sim_type": "prepaid",
+      "status": "active",
+      "activation_date": "2023-04-01",
+      "months_active": 38,
+      "last_topup_date": "2026-06-12",
+      "last_network_activity": "2026-06-11",
+      "six_month_summary": {
+        "total_topups": 12,
+        "total_topup_value_syp": 330000,
+        "average_monthly_topup_syp": 55000
+      },
+      "monthly_activity": [
+        {
+          "month": "2026-01",
+          "monthly_total_syp": 80000
+        },
+        {
+          "month": "2026-02",
+          "monthly_total_syp": 70000
+        },
+        {
+          "month": "2026-03",
+          "monthly_total_syp": 60000
+        },
+        {
+          "month": "2026-04",
+          "monthly_total_syp": 50000
+        },
+        {
+          "month": "2026-05",
+          "monthly_total_syp": 40000
+        },
+        {
+          "month": "2026-06",
+          "monthly_total_syp": 30000
+        }
+      ]
+    },
+    {
+      "phone_number": "0956000030",
+      "sim_type": "prepaid",
+      "status": "active",
+      "activation_date": "2024-05-01",
+      "months_active": 25,
+      "last_topup_date": "2026-06-19",
+      "last_network_activity": "2026-06-18",
+      "six_month_summary": {
+        "total_topups": 12,
+        "total_topup_value_syp": 252000,
+        "average_monthly_topup_syp": 42000
+      },
+      "monthly_activity": [
+        {
+          "month": "2026-01",
+          "monthly_total_syp": 40000
+        },
+        {
+          "month": "2026-02",
+          "monthly_total_syp": 42000
+        },
+        {
+          "month": "2026-03",
+          "monthly_total_syp": 41000
+        },
+        {
+          "month": "2026-04",
+          "monthly_total_syp": 43000
+        },
+        {
+          "month": "2026-05",
+          "monthly_total_syp": 42000
+        },
+        {
+          "month": "2026-06",
+          "monthly_total_syp": 44000
+        }
+      ]
+    }
+  ],
+  "features": {
+    "total_sims": 2,
+    "has_contract_sim": false,
+    "prepaid_sim_count": 2,
+    "contract_sim_count": 0,
+    "max_tenure_months": 38,
+    "days_since_last_activity": 7,
+    "contract_ontime_rate": null,
+    "contract_total_months": null,
+    "prepaid_total_spend_6m": 582000.0,
+    "prepaid_avg_monthly_spend": 97000,
+    "prepaid_spend_stddev": 17550,
+    "prepaid_spend_trend": -9371.4,
+    "prepaid_topup_frequency_6m": 24,
+    "computed_at": "2026-06-26T00:00:00Z",
+    "feature_version": "v1"
+  }
+}
