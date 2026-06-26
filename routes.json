@@ -1,0 +1,18 @@
+{
+  "/admin/merchants": "/merchants",
+  "/admin/merchants/:id": "/merchants/:id",
+  "/admin/merchant-integrations": "/merchant_integrations",
+  "/admin/merchant-integrations/:id": "/merchant_integrations/:id",
+  "/admin/telecom/reports": "/telecom_reports",
+  "/admin/telecom/reports/:id": "/telecom_reports/:id",
+  "/admin/api-keys": "/api_keys",
+  "/admin/audit-logs": "/audit_logs",
+  "/merchant/customers": "/customers",
+  "/merchant/customers/:id": "/customers/:id",
+  "/merchant/credit-accounts": "/credit_accounts",
+  "/merchant/credit-accounts/:id": "/credit_accounts/:id",
+  "/merchant/payments": "/payments",
+  "/merchant/payments/:id": "/payments/:id",
+  "/merchant/verifications": "/verifications",
+  "/merchant/api-keys": "/api_keys"
+}

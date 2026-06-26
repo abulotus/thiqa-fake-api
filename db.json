@@ -1,0 +1,79 @@
+{
+  "merchants": [
+    {
+      "id": "m-syr-001",
+      "business_name_en": "Syriatel Demo Merchant",
+      "business_name_ar": "سيريتل ديمو",
+      "owner_name": "Omar Al-Khateeb",
+      "phone_number": "0991110001",
+      "city": "Damascus",
+      "category": "telecom",
+      "status": "ACTIVE",
+      "registration_number": "SYR-2024-001",
+      "created_at": "2024-01-15T08:00:00Z"
+    },
+    {
+      "id": "m-mtn-002",
+      "business_name_en": "MTN Demo Merchant",
+      "business_name_ar": "MTN ديمو",
+      "owner_name": "Rania Hassan",
+      "phone_number": "0941110002",
+      "city": "Aleppo",
+      "category": "telecom",
+      "status": "ACTIVE",
+      "registration_number": "SYR-2024-002",
+      "created_at": "2024-02-10T08:00:00Z"
+    },
+    {
+      "id": "m-gen-003",
+      "business_name_en": "General Finance Merchant",
+      "business_name_ar": "تاجر مالي عام",
+      "owner_name": "Samir Barakat",
+      "phone_number": "0991110003",
+      "city": "Latakia",
+      "category": "non_telecom",
+      "status": "ACTIVE",
+      "registration_number": "SYR-2024-003",
+      "created_at": "2024-03-05T08:00:00Z"
+    }
+  ],
+  "merchant_integrations": [
+    {
+      "id": "int-syr-001",
+      "merchant_id": "m-syr-001",
+      "name": "Syriatel API Integration",
+      "provider": "Syriatel",
+      "base_url": "http://localhost:8001",
+      "auth_type": "api_key",
+      "credit_accounts_endpoint": "/api/customer-report",
+      "payments_endpoint": "/api/payments",
+      "is_active": true,
+      "sync_interval_minutes": 60,
+      "last_sync_at": "2026-06-25T10:00:00Z",
+      "last_success_at": "2026-06-25T10:00:00Z",
+      "last_error": null
+    },
+    {
+      "id": "int-mtn-002",
+      "merchant_id": "m-mtn-002",
+      "name": "MTN API Integration",
+      "provider": "MTN",
+      "base_url": "http://localhost:8001",
+      "auth_type": "api_key",
+      "credit_accounts_endpoint": "/api/customer-report",
+      "payments_endpoint": "/api/payments",
+      "is_active": true,
+      "sync_interval_minutes": 60,
+      "last_sync_at": "2026-06-24T10:00:00Z",
+      "last_success_at": "2026-06-24T10:00:00Z",
+      "last_error": null
+    }
+  ],
+  "telecom_reports": [],
+  "customers": [],
+  "credit_accounts": [],
+  "payments": [],
+  "verifications": [],
+  "api_keys": [],
+  "audit_logs": []
+}

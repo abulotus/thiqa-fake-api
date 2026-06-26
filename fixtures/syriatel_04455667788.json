@@ -1,0 +1,57 @@
+{
+  "national_id": "04455667788",
+  "provider": "Syriatel",
+  "registered_sims": 2,
+  "sims": [
+    {
+      "phone_number": "0933999000",
+      "type": "contract",
+      "status": "active",
+      "purchase_date": "2021-06-01",
+      "months_active": 60,
+      "monthly_fee": 55000,
+      "payment_status": "paid",
+      "payments_last_6_months": [
+        { "month": "2026-01", "status": "paid" },
+        { "month": "2026-02", "status": "paid" },
+        { "month": "2026-03", "status": "paid" },
+        { "month": "2026-04", "status": "paid" },
+        { "month": "2026-05", "status": "paid" },
+        { "month": "2026-06", "status": "paid" }
+      ]
+    },
+    {
+      "phone_number": "0944777000",
+      "type": "prepaid",
+      "status": "active",
+      "purchase_date": "2022-03-08",
+      "last_network_activity": "2026-06-24",
+      "topups_last_6_months": [
+        { "date": "2026-01-09", "amount": 7000 },
+        { "date": "2026-01-28", "amount": 7000 },
+        { "date": "2026-02-17", "amount": 7000 },
+        { "date": "2026-03-14", "amount": 8000 },
+        { "date": "2026-04-13", "amount": 8000 },
+        { "date": "2026-05-16", "amount": 9000 },
+        { "date": "2026-06-15", "amount": 9000 }
+      ]
+    }
+  ],
+  "features": {
+    "total_sims": 2,
+    "has_contract_sim": true,
+    "prepaid_sim_count": 1,
+    "contract_sim_count": 1,
+    "max_tenure_months": 60,
+    "days_since_last_activity": 2,
+    "contract_ontime_rate": 1.0,
+    "contract_total_months": 6,
+    "prepaid_total_spend_6m": 55000,
+    "prepaid_avg_monthly_spend": 9167,
+    "prepaid_spend_stddev": 2314,
+    "prepaid_spend_trend": -543,
+    "prepaid_topup_frequency_6m": 7,
+    "computed_at": "2026-06-26T00:00:00Z",
+    "feature_version": "v1"
+  }
+}

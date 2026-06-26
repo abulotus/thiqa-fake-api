@@ -1,0 +1,111 @@
+{
+  "national_id": "0400901234",
+  "provider": "Syriatel",
+  "request_id": "mixed-stable-001",
+  "generated_at": "2026-06-20T10:00:00Z",
+  "customer": {
+    "national_id": "0400901234",
+    "full_name_ar": "محمد عمر الرشيد",
+    "full_name_en": "Mohammad Omar Al-Rashid",
+    "mobile_number": "0991111111",
+    "date_of_birth": "1978-01-20",
+    "gender": "M"
+  },
+  "sim_cards": [
+    {
+      "phone_number": "0991111111",
+      "sim_type": "contract",
+      "status": "active",
+      "activation_date": "2013-05-01",
+      "months_active": 157,
+      "last_payment_date": "2026-06-10",
+      "monthly_fee_syp": 25000,
+      "payment_status": "paid",
+      "payments_last_6_months": [
+        { "month": "2026-01", "status": "paid" },
+        { "month": "2026-02", "status": "paid" },
+        { "month": "2026-03", "status": "paid" },
+        { "month": "2026-04", "status": "paid" },
+        { "month": "2026-05", "status": "paid" },
+        { "month": "2026-06", "status": "paid" }
+      ]
+    },
+    {
+      "phone_number": "0991111112",
+      "sim_type": "contract",
+      "status": "active",
+      "activation_date": "2016-08-15",
+      "months_active": 118,
+      "last_payment_date": "2026-06-08",
+      "monthly_fee_syp": 18000,
+      "payment_status": "paid",
+      "payments_last_6_months": [
+        { "month": "2026-01", "status": "paid" },
+        { "month": "2026-02", "status": "paid" },
+        { "month": "2026-03", "status": "late" },
+        { "month": "2026-04", "status": "paid" },
+        { "month": "2026-05", "status": "paid" },
+        { "month": "2026-06", "status": "paid" }
+      ]
+    },
+    {
+      "phone_number": "0991111113",
+      "sim_type": "prepaid",
+      "status": "active",
+      "activation_date": "2017-02-01",
+      "months_active": 112,
+      "last_topup_date": "2026-06-22",
+      "six_month_summary": {
+        "total_topups": 15,
+        "total_topup_value_syp": 900000,
+        "average_monthly_topup_syp": 150000
+      },
+      "monthly_activity": [
+        { "month": "2026-01", "monthly_total_syp": 148000 },
+        { "month": "2026-02", "monthly_total_syp": 152000 },
+        { "month": "2026-03", "monthly_total_syp": 149000 },
+        { "month": "2026-04", "monthly_total_syp": 151000 },
+        { "month": "2026-05", "monthly_total_syp": 150000 },
+        { "month": "2026-06", "monthly_total_syp": 150000 }
+      ]
+    },
+    {
+      "phone_number": "0991111114",
+      "sim_type": "prepaid",
+      "status": "active",
+      "activation_date": "2019-11-01",
+      "months_active": 79,
+      "last_topup_date": "2026-06-19",
+      "six_month_summary": {
+        "total_topups": 12,
+        "total_topup_value_syp": 600000,
+        "average_monthly_topup_syp": 100000
+      },
+      "monthly_activity": [
+        { "month": "2026-01", "monthly_total_syp": 98000 },
+        { "month": "2026-02", "monthly_total_syp": 101000 },
+        { "month": "2026-03", "monthly_total_syp": 100000 },
+        { "month": "2026-04", "monthly_total_syp": 102000 },
+        { "month": "2026-05", "monthly_total_syp": 99000 },
+        { "month": "2026-06", "monthly_total_syp": 100000 }
+      ]
+    }
+  ],
+  "features": {
+    "total_sims": 4,
+    "has_contract_sim": true,
+    "prepaid_sim_count": 2,
+    "contract_sim_count": 2,
+    "max_tenure_months": 157,
+    "days_since_last_activity": 4,
+    "contract_ontime_rate": 0.92,
+    "contract_total_months": 12,
+    "prepaid_total_spend_6m": 1500000,
+    "prepaid_avg_monthly_spend": 125000,
+    "prepaid_spend_stddev": 1972,
+    "prepaid_spend_trend": 200,
+    "prepaid_topup_frequency_6m": 27,
+    "computed_at": "2026-06-20T10:00:00Z",
+    "feature_version": "v1"
+  }
+}

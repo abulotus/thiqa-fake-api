@@ -1,0 +1,13 @@
+{
+  "name": "thiqa-fake-api",
+  "version": "0.1.0",
+  "description": "Fake API server for ThiqaScore",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "jsonwebtoken": "^9"
+  }
+}

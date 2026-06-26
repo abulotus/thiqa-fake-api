@@ -1,0 +1,38 @@
+{
+  "national_id": "90010106821",
+  "provider": "MTN Syria",
+  "registered_sims": 1,
+  "sims": [
+    {
+      "phone_number": "0955667788",
+      "type": "prepaid",
+      "status": "active",
+      "purchase_date": "2024-09-03",
+      "last_network_activity": "2026-06-21",
+      "topups_last_6_months": [
+        { "date": "2026-01-12", "amount": 6000 },
+        { "date": "2026-02-25", "amount": 8000 },
+        { "date": "2026-03-29", "amount": 5000 },
+        { "date": "2026-05-01", "amount": 7000 },
+        { "date": "2026-06-18", "amount": 7000 }
+      ]
+    }
+  ],
+  "features": {
+    "total_sims": 1,
+    "has_contract_sim": false,
+    "prepaid_sim_count": 1,
+    "contract_sim_count": 0,
+    "max_tenure_months": 21,
+    "days_since_last_activity": 5,
+    "contract_ontime_rate": null,
+    "contract_total_months": 0,
+    "prepaid_total_spend_6m": 33000,
+    "prepaid_avg_monthly_spend": 5500,
+    "prepaid_spend_stddev": 2630,
+    "prepaid_spend_trend": -86,
+    "prepaid_topup_frequency_6m": 5,
+    "computed_at": "2026-06-26T00:00:00Z",
+    "feature_version": "v1"
+  }
+}

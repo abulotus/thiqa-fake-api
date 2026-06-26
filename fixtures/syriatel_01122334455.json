@@ -1,0 +1,75 @@
+{
+  "national_id": "01122334455",
+  "provider": "Syriatel",
+  "registered_sims": 4,
+  "sims": [
+    {
+      "phone_number": "0933555000",
+      "type": "prepaid",
+      "status": "active",
+      "purchase_date": "2019-11-20",
+      "last_network_activity": "2026-06-25",
+      "topups_last_6_months": [
+        { "date": "2026-01-02", "amount": 10000 },
+        { "date": "2026-02-08", "amount": 12000 },
+        { "date": "2026-03-10", "amount": 10000 },
+        { "date": "2026-04-11", "amount": 11000 },
+        { "date": "2026-05-09", "amount": 10000 },
+        { "date": "2026-06-07", "amount": 12000 }
+      ]
+    },
+    {
+      "phone_number": "0933555001",
+      "type": "prepaid",
+      "status": "inactive",
+      "purchase_date": "2022-04-01",
+      "last_network_activity": "2025-11-20",
+      "topups_last_6_months": []
+    },
+    {
+      "phone_number": "0933555002",
+      "type": "contract",
+      "status": "active",
+      "purchase_date": "2023-05-01",
+      "monthly_fee": 45000,
+      "payment_status": "paid",
+      "payments_last_6_months": [
+        { "month": "2026-01", "status": "paid" },
+        { "month": "2026-02", "status": "paid" },
+        { "month": "2026-03", "status": "paid" },
+        { "month": "2026-04", "status": "paid" },
+        { "month": "2026-05", "status": "paid" },
+        { "month": "2026-06", "status": "paid" }
+      ]
+    },
+    {
+      "phone_number": "0933555003",
+      "type": "prepaid",
+      "status": "active",
+      "purchase_date": "2025-02-14",
+      "last_network_activity": "2026-06-20",
+      "topups_last_6_months": [
+        { "date": "2026-04-12", "amount": 6000 },
+        { "date": "2026-05-20", "amount": 7000 },
+        { "date": "2026-06-20", "amount": 7000 }
+      ]
+    }
+  ],
+  "features": {
+    "total_sims": 4,
+    "has_contract_sim": true,
+    "prepaid_sim_count": 3,
+    "contract_sim_count": 1,
+    "max_tenure_months": 79,
+    "days_since_last_activity": 1,
+    "contract_ontime_rate": 1.0,
+    "contract_total_months": 6,
+    "prepaid_total_spend_6m": 85000,
+    "prepaid_avg_monthly_spend": 14167,
+    "prepaid_spend_stddev": 898,
+    "prepaid_spend_trend": 143,
+    "prepaid_topup_frequency_6m": 9,
+    "computed_at": "2026-06-26T00:00:00Z",
+    "feature_version": "v1"
+  }
+}

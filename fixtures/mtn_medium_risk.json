@@ -1,0 +1,68 @@
+{
+  "national_id": "0300345678",
+  "provider": "MTN",
+  "request_id": "mtn-med-001",
+  "generated_at": "2026-06-20T10:00:00Z",
+  "customer": {
+    "national_id": "0300345678",
+    "full_name_ar": "سارة علي المحمود",
+    "full_name_en": "Sara Ali Al-Mahmoud",
+    "mobile_number": "0937654321",
+    "date_of_birth": "1993-11-05",
+    "gender": "F"
+  },
+  "sim_cards": [
+    {
+      "phone_number": "0937654321",
+      "sim_type": "prepaid",
+      "status": "active",
+      "activation_date": "2020-09-10",
+      "months_active": 57,
+      "last_topup_date": "2026-06-18",
+      "six_month_summary": {
+        "total_topups": 10,
+        "total_topup_value_syp": 500000,
+        "average_monthly_topup_syp": 83333
+      },
+      "monthly_activity": [
+        { "month": "2026-01", "monthly_total_syp": 100000 },
+        { "month": "2026-02", "monthly_total_syp": 60000 },
+        { "month": "2026-03", "monthly_total_syp": 95000 },
+        { "month": "2026-04", "monthly_total_syp": 70000 },
+        { "month": "2026-05", "monthly_total_syp": 90000 },
+        { "month": "2026-06", "monthly_total_syp": 85000 }
+      ]
+    },
+    {
+      "phone_number": "0937654322",
+      "sim_type": "prepaid",
+      "status": "inactive",
+      "activation_date": "2021-04-01",
+      "months_active": 22,
+      "last_network_activity": "2023-02-01",
+      "six_month_summary": {
+        "total_topups": 0,
+        "total_topup_value_syp": 0,
+        "average_monthly_topup_syp": 0
+      },
+      "monthly_activity": []
+    }
+  ],
+  "features": {
+    "total_sims": 2,
+    "has_contract_sim": false,
+    "prepaid_sim_count": 2,
+    "contract_sim_count": 0,
+    "max_tenure_months": 57,
+    "days_since_last_activity": 8,
+    "contract_ontime_rate": null,
+    "contract_total_months": 0,
+    "prepaid_total_spend_6m": 500000,
+    "prepaid_avg_monthly_spend": 83333,
+    "prepaid_spend_stddev": 15055,
+    "prepaid_spend_trend": -1857,
+    "prepaid_topup_frequency_6m": 10,
+    "computed_at": "2026-06-20T10:00:00Z",
+    "feature_version": "v1"
+  }
+}
