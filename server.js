@@ -397,6 +397,152 @@ server.get('/admin/merchants/:id/verifications/summary', (req, res) => {
   res.json({ total: 0, verified: 0, failed: 0, review_required: 0 });
 });
 
+// ── Transactions ─────────────────────────────────────────────────────────────
+
+// GET /merchant/transactions — global list, filterable
+server.get('/merchant/transactions', (req, res) => {
+  const payload = verifyToken(req);
+  if (!payload) return res.status(401).json({ detail: 'Unauthorized' });
+
+  let txns = router.db.get('transactions').value() || [];
+
+  if (req.query.merchant_id) txns = txns.filter(t => t.merchant_id === req.query.merchant_id);
+  if (req.query.credit_account_id) txns = txns.filter(t => t.credit_account_id === req.query.credit_account_id);
+  if (req.query.transaction_type) txns = txns.filter(t => t.transaction_type === req.query.transaction_type);
+  if (req.query.from_date) txns = txns.filter(t => t.transaction_date >= req.query.from_date);
+  if (req.query.to_date) txns = txns.filter(t => t.transaction_date <= req.query.to_date + 'T23:59:59Z');
+
+  if (payload.role !== 'super_admin' && payload.merchant_id) {
+    txns = txns.filter(t => t.merchant_id === payload.merchant_id);
+  }
+
+  txns = txns.slice().sort((a, b) => b.transaction_date.localeCompare(a.transaction_date));
+  const page = parseInt(req.query.page) || 1;
+  const per_page = parseInt(req.query.per_page) || 50;
+  res.json(txns.slice((page - 1) * per_page, page * per_page));
+});
+
+// GET /merchant/credit-accounts/:id/transactions
+server.get('/merchant/credit-accounts/:id/transactions', (req, res) => {
+  const payload = verifyToken(req);
+  if (!payload) return res.status(401).json({ detail: 'Unauthorized' });
+
+  const txns = (router.db.get('transactions').value() || [])
+    .filter(t => t.credit_account_id === req.params.id)
+    .slice()
+    .sort((a, b) => b.transaction_date.localeCompare(a.transaction_date));
+
+  const page = parseInt(req.query.page) || 1;
+  const per_page = parseInt(req.query.per_page) || 50;
+  res.json(txns.slice((page - 1) * per_page, page * per_page));
+});
+
+// POST /merchant/credit-accounts/:id/transactions
+server.post('/merchant/credit-accounts/:id/transactions', (req, res) => {
+  const payload = verifyToken(req);
+  if (!payload) return res.status(401).json({ detail: 'Unauthorized' });
+
+  const account = (router.db.get('credit_accounts').value() || []).find(a => a.id === req.params.id);
+  if (!account) return res.status(404).json({ detail: 'Credit account not found' });
+
+  const { transaction_type, direction, amount, transaction_date, reference, description } = req.body || {};
+  if (!transaction_type || !amount) {
+    return res.status(422).json({ detail: 'transaction_type and amount are required' });
+  }
+
+  if (account.account_type === 'BEHAVIOUR_PROFILE' && transaction_type !== 'TOPUP') {
+    return res.status(400).json({ detail: 'BEHAVIOUR_PROFILE accounts only accept TOPUP transactions' });
+  }
+
+  const AUTO_DIR = {
+    OPENING_BALANCE: 'DEBIT', PURCHASE: 'DEBIT', BILL: 'DEBIT',
+    INTEREST: 'DEBIT', FEE: 'DEBIT',
+    TOPUP: 'CREDIT', REFUND: 'CREDIT', REVERSAL: 'CREDIT',
+  };
+  const resolvedDir = direction || AUTO_DIR[transaction_type] || 'DEBIT';
+
+  let balance_after = null;
+  if (account.account_type !== 'BEHAVIOUR_PROFILE') {
+    let balance = parseFloat(account.current_balance) || 0;
+    if (transaction_type === 'OPENING_BALANCE') balance = parseFloat(amount);
+    else if (resolvedDir === 'DEBIT') balance += parseFloat(amount);
+    else balance = Math.max(0, balance - parseFloat(amount));
+    balance_after = parseFloat(balance.toFixed(2));
+
+    router.db.get('credit_accounts')
+      .find({ id: req.params.id })
+      .assign({
+        current_balance: balance_after,
+        balance_remaining: balance_after,
+        status: balance_after <= 0 ? 'SETTLED' : 'ACTIVE',
+        updated_at: new Date().toISOString(),
+      })
+      .write();
+  }
+
+  const txn = {
+    id: 'txn-' + Date.now(),
+    credit_account_id: req.params.id,
+    merchant_id: account.merchant_id,
+    transaction_type,
+    direction: resolvedDir,
+    amount: parseFloat(amount),
+    balance_after,
+    transaction_date: transaction_date || new Date().toISOString(),
+    reference: reference || null,
+    description: description || null,
+    metadata_json: {},
+    created_at: new Date().toISOString(),
+  };
+
+  router.db.get('transactions').push(txn).write();
+  res.status(201).json(txn);
+});
+
+// GET /merchant/transactions/:id
+server.get('/merchant/transactions/:id', (req, res) => {
+  const payload = verifyToken(req);
+  if (!payload) return res.status(401).json({ detail: 'Unauthorized' });
+  const txn = (router.db.get('transactions').value() || []).find(t => t.id === req.params.id);
+  if (!txn) return res.status(404).json({ detail: 'Transaction not found' });
+  res.json(txn);
+});
+
+// POST /merchant/payments — block for BEHAVIOUR_PROFILE, update balance
+server.post('/merchant/payments', (req, res) => {
+  const payload = verifyToken(req);
+  if (!payload) return res.status(401).json({ detail: 'Unauthorized' });
+
+  const { credit_account_id, amount_paid } = req.body || {};
+  const account = (router.db.get('credit_accounts').value() || []).find(a => a.id === credit_account_id);
+  if (!account) return res.status(404).json({ detail: 'Credit account not found' });
+
+  if (account.account_type === 'BEHAVIOUR_PROFILE') {
+    return res.status(400).json({ detail: 'Payment events are not applicable to BEHAVIOUR_PROFILE accounts' });
+  }
+
+  const newBalance = parseFloat(Math.max(0, (parseFloat(account.current_balance) || 0) - parseFloat(amount_paid)).toFixed(2));
+  router.db.get('credit_accounts')
+    .find({ id: credit_account_id })
+    .assign({
+      current_balance: newBalance,
+      balance_remaining: newBalance,
+      status: newBalance <= 0 ? 'SETTLED' : 'ACTIVE',
+      updated_at: new Date().toISOString(),
+    })
+    .write();
+
+  const payment = {
+    id: 'pay-' + Date.now(),
+    merchant_id: account.merchant_id,
+    ...req.body,
+    amount_paid: parseFloat(amount_paid),
+    created_at: new Date().toISOString(),
+  };
+  router.db.get('payments').push(payment).write();
+  res.status(201).json(payment);
+});
+
 // ── Wire up json-server ───────────────────────────────────────────────────────
 
 server.use(jsonServer.rewriter(require('./routes.json')));
