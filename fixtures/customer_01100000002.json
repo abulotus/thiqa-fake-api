@@ -2,148 +2,72 @@
   "national_id": "01100000002",
   "provider": "Syriatel",
   "request_id": "TEL-2026-000002",
-  "generated_at": "2026-06-26T08:00:00Z",
+  "generated_at": "2026-06-27T08:00:00Z",
   "customer": {
     "national_id": "01100000002",
-    "full_name_ar": "هند علي المصري",
-    "full_name_en": "Hind Ali Al-Masri",
-    "date_of_birth": "1985-07-22",
+    "full_name_ar": "رانيا حسن",
+    "full_name_en": "Rania Hassan",
+    "date_of_birth": "1992-07-18",
     "gender": "F",
-    "mobile_number": "0931000002"
+    "mobile_number": "0991234002"
   },
   "sim_cards": [
     {
-      "phone_number": "0931000002",
+      "phone_number": "0991234002",
       "sim_type": "contract",
       "status": "active",
-      "activation_date": "2020-06-01",
-      "months_active": 72,
+      "activation_date": "2020-03-01",
+      "months_active": 75,
       "monthly_fee_syp": 45000,
-      "last_payment_date": "2026-06-21",
+      "last_payment_date": "2026-06-15",
       "payment_status": "paid",
       "payments_last_6_months": [
-        {
-          "month": "2026-01",
-          "status": "paid"
-        },
-        {
-          "month": "2026-02",
-          "status": "paid"
-        },
-        {
-          "month": "2026-03",
-          "status": "paid"
-        },
-        {
-          "month": "2026-04",
-          "status": "paid"
-        },
-        {
-          "month": "2026-05",
-          "status": "paid"
-        },
-        {
-          "month": "2026-06",
-          "status": "paid"
-        }
+        { "month": "2026-01", "status": "paid" },
+        { "month": "2026-02", "status": "paid" },
+        { "month": "2026-03", "status": "paid" },
+        { "month": "2026-04", "status": "paid" },
+        { "month": "2026-05", "status": "paid" },
+        { "month": "2026-06", "status": "paid" }
       ]
     },
     {
-      "phone_number": "0932000002",
+      "phone_number": "0991234003",
       "sim_type": "prepaid",
       "status": "active",
-      "activation_date": "2021-06-01",
-      "months_active": 60,
-      "last_topup_date": "2026-06-23",
-      "last_network_activity": "2026-06-22",
-      "six_month_summary": {
-        "total_topups": 12,
-        "total_topup_value_syp": 935000,
-        "average_monthly_topup_syp": 155833
-      },
-      "monthly_activity": [
-        {
-          "month": "2026-01",
-          "monthly_total_syp": 150000
-        },
-        {
-          "month": "2026-02",
-          "monthly_total_syp": 155000
-        },
-        {
-          "month": "2026-03",
-          "monthly_total_syp": 150000
-        },
-        {
-          "month": "2026-04",
-          "monthly_total_syp": 160000
-        },
-        {
-          "month": "2026-05",
-          "monthly_total_syp": 158000
-        },
-        {
-          "month": "2026-06",
-          "monthly_total_syp": 162000
-        }
-      ]
-    },
-    {
-      "phone_number": "0933000002",
-      "sim_type": "prepaid",
-      "status": "active",
-      "activation_date": "2022-06-01",
-      "months_active": 48,
+      "activation_date": "2022-01-01",
+      "months_active": 54,
       "last_topup_date": "2026-06-20",
-      "last_network_activity": "2026-06-19",
+      "last_network_activity": "2026-06-20",
       "six_month_summary": {
         "total_topups": 12,
-        "total_topup_value_syp": 497000,
-        "average_monthly_topup_syp": 82833
+        "total_topup_value_syp": 780000,
+        "average_monthly_topup_syp": 130000
       },
       "monthly_activity": [
-        {
-          "month": "2026-01",
-          "monthly_total_syp": 80000
-        },
-        {
-          "month": "2026-02",
-          "monthly_total_syp": 82000
-        },
-        {
-          "month": "2026-03",
-          "monthly_total_syp": 80000
-        },
-        {
-          "month": "2026-04",
-          "monthly_total_syp": 85000
-        },
-        {
-          "month": "2026-05",
-          "monthly_total_syp": 83000
-        },
-        {
-          "month": "2026-06",
-          "monthly_total_syp": 87000
-        }
+        { "month": "2026-01", "monthly_total_syp": 120000 },
+        { "month": "2026-02", "monthly_total_syp": 125000 },
+        { "month": "2026-03", "monthly_total_syp": 130000 },
+        { "month": "2026-04", "monthly_total_syp": 130000 },
+        { "month": "2026-05", "monthly_total_syp": 135000 },
+        { "month": "2026-06", "monthly_total_syp": 140000 }
       ]
     }
   ],
   "features": {
-    "total_sims": 3,
+    "total_sims": 2,
     "has_contract_sim": true,
-    "prepaid_sim_count": 2,
+    "prepaid_sim_count": 1,
     "contract_sim_count": 1,
-    "max_tenure_months": 72,
-    "days_since_last_activity": 3,
+    "max_tenure_months": 75,
+    "days_since_last_activity": 7,
     "contract_ontime_rate": 1.0,
     "contract_total_months": 6,
-    "prepaid_total_spend_6m": 1432000.0,
-    "prepaid_avg_monthly_spend": 238667,
-    "prepaid_spend_stddev": 7815,
-    "prepaid_spend_trend": 3485.7,
-    "prepaid_topup_frequency_6m": 24,
-    "computed_at": "2026-06-26T00:00:00Z",
+    "prepaid_total_spend_6m": 780000,
+    "prepaid_avg_monthly_spend": 130000,
+    "prepaid_spend_stddev": 7211,
+    "prepaid_spend_trend": 3857,
+    "prepaid_topup_frequency_6m": 12,
+    "computed_at": "2026-06-27T08:00:00Z",
     "feature_version": "v1"
   }
 }
